@@ -43,7 +43,7 @@ inventory-management/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/inventory-management.git
+   git clone https://github.com/Luisr26/SPA_GestionM3S2/
    cd inventory-management
    ```
 
@@ -153,4 +153,4 @@ This project is licensed under the GNU License - see the [LICENSE](LICENSE) file
 
 Luis Orozco - luisoro009@gmail.com
 
-Project Link: [[https://github.com/yourusername/inventory-management]([https://github.com/Luisr26/SPA_GestionM3S2/](https://github.com/Luisr26/SPA_GestionM3S2/))](https://github.com/yourusername/inventory-management)
+Project Link: ![https://github.com/yourusername/inventory-management](https://github.com/Luisr26/SPA_GestionM3S2)
