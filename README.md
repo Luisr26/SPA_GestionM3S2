@@ -153,4 +153,4 @@ This project is licensed under the GNU License - see the [LICENSE](LICENSE) file
 
 Luis Orozco - luisoro009@gmail.com
 
-Project Link: ![https://github.com/yourusername/inventory-management](https://github.com/Luisr26/SPA_GestionM3S2)
+Project Link: [projectLink](https://spa-gestion-m3-s2-5e2w.vercel.app/)
