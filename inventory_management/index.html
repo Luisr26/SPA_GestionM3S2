@@ -2,36 +2,123 @@
 <html lang="en">
 
 <head>
+  <!-- Basic Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Inventory Management System - CRUD Operations</title>
+  <meta name="description" content="Comprehensive inventory management system with CRUD operations for product tracking, quantity control, and price management.">
+  <meta name="keywords" content="inventory management, CRUD, product management, stock control, warehouse management, inventory tracking">
+  <meta name="author" content="Your Company Name">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph Meta Tags (Social Media) -->
+  <meta property="og:title" content="Inventory Management System - CRUD Operations">
+  <meta property="og:description" content="Comprehensive inventory management system with CRUD operations for product tracking, quantity control, and price management.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/inventory">
+  <meta property="og:image" content="https://yourwebsite.com/images/inventory-preview.jpg">
+  <meta property="og:site_name" content="Inventory Management System">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Inventory Management System - CRUD Operations">
+  <meta name="twitter:description" content="Comprehensive inventory management system with CRUD operations for product tracking, quantity control, and price management.">
+  <meta name="twitter:image" content="https://yourwebsite.com/images/inventory-preview.jpg">
+  <meta name="twitter:site" content="@yourtwitterhandle">
+  <meta name="twitter:creator" content="@yourtwitterhandle">
+  
+  <!-- Application Meta Tags -->
+  <meta name="application-name" content="Inventory Management System">
+  <meta name="apple-mobile-web-app-title" content="Inventory CRUD">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="mobile-web-app-capable" content="yes">
+  
+  <!-- Security Meta Tags -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  
+  <!-- Performance Meta Tags -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  
+  <!-- Theme and Color Meta Tags -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="msapplication-navbutton-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Favicon Links -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="./src/styles/styles.css" as="style">
+  <link rel="preload" href="./src/js/app.js" as="script">
+  
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourwebsite.com/inventory">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="./src/styles/styles.css">
-  <title>Inventory Management</title>
 </head>
 
 <body>
+  <!-- Main navigation header -->
   <header class="container-navbar">
+    <!-- Primary application title -->
     <h1 class="title-main">CRUD | Inventory Management</h1>
   </header>
+
+  <!-- Main content wrapper -->
   <main>
+    <!-- Product input form section -->
     <section class="container-form">
+      <!-- Form container article -->
       <article class="sub-container-form">
+        <!-- Form title container -->
         <div class="container-title-form">
           <h2>Enter Products</h2>
         </div>
+        <!-- Product entry form -->
         <form action="" class="myForm">
+          <!-- Product name input field -->
           <input type="text" placeholder="Enter the name of the product" class="inputs-form" id="product">
+          <!-- Product quantity input field -->
           <input type="number" placeholder="Enter the quantity of the product" class="inputs-form" id="quantity">
+          <!-- Product price input field -->
           <input type="number" placeholder="Enter the price of the product" class="inputs-form" id="price">
+          <!-- Form action buttons container -->
           <div class="container-btn-form">
+            <!-- Save/Update product button -->
             <button id="btn-save" class="btn-form">Save</button>
+            <!-- Clear form fields button -->
             <button id="btn-clear" class="btn-form">Clear</button>
           </div>
         </form>
       </article>
     </section>
+    <!-- Products display table section -->
     <section class="container-table">
+      <!-- Table container article -->
       <article class="sub-container-table">
+        <!-- Products data table -->
         <table>
+          <!-- Table header definitions -->
           <thead>
             <tr>
               <th>ID</th>
@@ -41,12 +128,14 @@
               <th>Options</th>
             </tr>
           </thead>
+          <!-- Table body for dynamic content -->
           <tbody class="t-body">
           </tbody>
         </table>
       </article>
     </section>
   </main>
+  <!-- Main application JavaScript module -->
   <script type="module" src="./src/js/app.js"></script>
 </body>
 </html>

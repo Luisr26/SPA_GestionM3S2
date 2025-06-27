@@ -1,3 +1,4 @@
+/* Global reset and system font setup */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,10 +6,12 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Sets dark blue background for entire page */
 body{
     background-color: #0B1D51;
 }
 
+/* Styles the top navigation bar */
 .container-navbar{
     width: 100%;
     height: 6em;
@@ -18,12 +21,14 @@ body{
     align-items: center;
 }
 
+/* Styles the main title text */
 .title-main{
     margin: 0em 2em;
     font-size: clamp(.5em, 1.5em, 2em);
     color: whitesmoke;
 }
 
+/* Centers the form section on the page */
 .container-form{
     width: 100%;
     height: calc(100vh - 6em);
@@ -32,6 +37,7 @@ body{
     align-items: center;
 }
 
+/* Creates the form's background card */
 .sub-container-form{
     width: 35em;
     height: 40em;
@@ -43,6 +49,7 @@ body{
     border-radius: 15px;
 }
 
+/* Styles the form title section */
 .container-title-form{
     position: relative;
     bottom:3em;
@@ -57,6 +64,7 @@ body{
     color: #ffffff;
 }
 
+/* Arranges form elements vertically */
 .myForm{
     display: flex;
     flex-direction: column;
@@ -64,6 +72,7 @@ body{
     align-items: center;
 }
 
+/* Styles all form input fields */
 .inputs-form{
     display: flex;
     width: 30em;
@@ -74,16 +83,19 @@ body{
     font-size: 1em;
 }
 
+/* Adds blue border when input is focused */
 .inputs-form:focus{
     border: 3px solid rgb(15, 15, 218);
     outline: none;
 }
 
+/* Arranges form buttons horizontally */
 .container-btn-form{
     display: flex;
     gap: 1rem;
 }
 
+/* Base styling for form buttons */
 .btn-form{
     width: 15em;
     height: 3.5em;
@@ -97,18 +109,22 @@ body{
     font-size: clamp(.5em, 1em, 1.5em);
 }
 
+/* Adds hover animation to form buttons */
 .btn-form:hover{
     transform: translateY(-10px) scale(1.05);
 }
 
+/* Colors the save button green */
 #btn-save{
     background-color: #06FF00;
 }
 
+/* Colors the clear button light blue */
 #btn-clear{
     background-color: #88E0EF;
 }
 
+/* Centers the table section */
 .container-table{
     width: 100%;
     height: 100%;
@@ -117,6 +133,7 @@ body{
     padding: 2em 0;
 }
 
+/* Creates the table's white background container */
 .sub-container-table{
     width: 80em;
     background-color: white;
@@ -127,11 +144,13 @@ body{
     border-radius: 10px 10px 0px 0px;
 }
 
+/* Removes default table spacing */
 table{
     width: 100%;
     border-collapse: collapse;
 }
 
+/* Styles table header cells */
 th{
     background-color: #06FF00;
     height: 4em;
@@ -141,6 +160,7 @@ th{
     border: 1px solid #ddd;
 }
 
+/* Styles table data cells */
 td{
     height: 3em;
     text-align: center;
@@ -148,6 +168,7 @@ td{
     padding: 0.5em;
 }
 
+/* Arranges action buttons within table cells */
 .td-btn{
     display: flex;
     gap: 0.5rem;
@@ -155,6 +176,7 @@ td{
     align-items: center;
 }
 
+/* Styles the update button */
 .btn-update{
     background-color: #483AA0;
     color: white;
@@ -166,11 +188,13 @@ td{
     transition: all .3s ease;
 }
 
+/* Adds hover effect to update button */
 .btn-update:hover{
     background-color: #7965C1;
     transform: scale(1.05);
 }
 
+/* Styles the delete button */
 .btn-delete{
     background-color: #FF4444;
     color: white;
@@ -182,50 +206,61 @@ td{
     transition: all .3s ease;
 }
 
+/* Adds hover effect to delete button */
 .btn-delete:hover{
     background-color: #CC0000;
     transform: scale(1.05);
 }
 
+/* Changes save button appearance during edit mode */
 .editing{
     background-color: #FFE066;
     color: #0B1D51;
 }
 
+/* Mobile responsive styles for screens under 460px */
 @media (max-width: 460px) {
+    /* Reduces form container size */
     .sub-container-form{
         width: 22em;
         height: 33em;
     }
 
+    /* Adjusts form title size */
     .container-title-form{
         width: 14em;
         height: 3em;
         font-size: 1em;
     }
 
+    /* Reduces input field width */
     .inputs-form{
         width: 20em;
     }
 
+    /* Adjusts button container width */
     .container-btn-form{
         width: 17em;
     }
 
+    /* Makes table container responsive */
     .sub-container-table{
         width: 95%;
         overflow-x: auto;
     }
 
+    /* Sets minimum table width for horizontal scrolling */
     table{
         min-width: 600px;
     }
 
+    /* Stacks action buttons vertically on mobile */
     .td-btn{
         flex-direction: column;
         gap: 0.3rem;
     }
 
+    /* Reduces button size on mobile */
     .btn-update,
     .btn-delete{
         padding: 0.3em 0.7em;
