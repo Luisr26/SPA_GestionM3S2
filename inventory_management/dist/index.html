@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management</title>
+  <script type="module" crossorigin src="/assets/index-F5JP7WUy.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-wRyJtmqN.css">
+</head>
+
+<body>
+  <header class="container-navbar">
+    <h1 class="title-main">CRUD | Inventory Management</h1>
+  </header>
+  <main>
+    <section class="container-form">
+      <article class="sub-container-form">
+        <div class="container-title-form">
+          <h2>Enter Products</h2>
+        </div>
+        <form action="" class="myForm">
+          <input type="text" placeholder="Enter the name of the product" class="inputs-form" id="product">
+          <input type="number" placeholder="Enter the quantity of the product" class="inputs-form" id="quantity">
+          <input type="number" placeholder="Enter the price of the product" class="inputs-form" id="price">
+          <div class="container-btn-form">
+            <button id="btn-save" class="btn-form">Save</button>
+            <button id="btn-clear" class="btn-form">Clear</button>
+          </div>
+        </form>
+      </article>
+    </section>
+    <section class="container-table">
+      <article class="sub-container-table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody class="t-body">
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
