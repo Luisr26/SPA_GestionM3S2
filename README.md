@@ -15,7 +15,7 @@ A modern, responsive inventory management application built with vanilla HTML, C
 
 ## Demo
 
-![Inventory Management System]([https://ibb.co/HTXM2mby]))
+![Inventory Management System]([[https://ibb.co/HTXM2mby](https://i.ibb.co/F4nfWGy1/Captura-de-pantalla-2025-06-26-230017.png)]))
 
 ## Technologies Used
 
